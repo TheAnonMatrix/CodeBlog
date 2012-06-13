@@ -22,3 +22,6 @@ To install this, use pip and do
 <code>
     pip install Django=1.4.0
 </code>
+
+Using zinnia's blog (http://django-blog-zinnia.com/documentation/getting-started/install/):
+Do `pip install django-blog-zinnia`
