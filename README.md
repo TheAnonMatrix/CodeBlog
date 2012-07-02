@@ -42,4 +42,15 @@ After that, install [Zinnia's blog](http://django-blog-zinnia.com/documentation/
 
 You might also need to do `export LANG="en_US.UTF-8"`, this is a [problem/bug](https://code.djangoproject.com/ticket/16017 "Create superuser fails") in Django version 1.4.
 
+After this, if you wan't to change CSS files, we use compass for this, so you'll need to install that first.
+
+`gem install compass`
+
+And zinnia also need the [compass-susy](http://susy.oddbird.net/ "Responsive grids for Compass.") plugin (note it's the deprecated 0.9 version)
+
+`gem install compass-susy-plugin`
+
+
 ---
+
+Views are located in `/resources/templates` and static files (CSS, Js, images etc) are located in `/resources/static`.
