@@ -30,18 +30,20 @@ The Django version is probably the most important one, since python is rather go
 
 Other than cloning (or forking then cloning) the project down, there are a couple of things that are needed.
 
+#### Django ####
 To install this Django version 1.4.0, use pip and do
 
-<code>
-    pip install Django=1.4.0
-</code>
+´pip install Django=1.4.0´
 
+
+#### Zinnia ####
 After that, install [Zinnia's blog](http://django-blog-zinnia.com/documentation/getting-started/install/ "Zinnia's blog") app:
 
 `pip install django-blog-zinnia`
 
 You might also need to do `export LANG="en_US.UTF-8"`, this is a [problem/bug](https://code.djangoproject.com/ticket/16017 "Create superuser fails") in Django version 1.4.
 
+#### Compass ####
 After this, if you wan't to change CSS files, we use compass for this, so you'll need to install that first.
 
 `gem install compass`
