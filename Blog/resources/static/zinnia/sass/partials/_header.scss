@@ -6,12 +6,18 @@
   h1 {
     margin-top: 0.5em;
     margin-bottom: 0;
-    font-size: 4em;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #aaa;
-    &:first-letter {
-      font-size: 120%;
-      color: lighten(adjust-hue($link-color, 120deg), 15%);
+    font-size: 3em;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Futura', 'Helvetica Nueue', Helvetica, sans-serif;
+    
+    a {
+        color:#90A2A7;
+        text-shadow: 0 1px 1px #E2E7E8;
+        letter-spacing: 0.1em;
+        &:hover {
+            text-decoration:none;
+            color:#90A2A7;
+        }
     }
   }
 

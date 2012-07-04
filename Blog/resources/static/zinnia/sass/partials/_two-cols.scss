@@ -33,10 +33,16 @@
   #content {
     @include columns(2 * $third);
     @include alpha;
+    position: absolute;
+    top: 20px;
+    left: 248px;
   }
   #sidebar {
     @include columns($third);
     @include omega;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   @media (max-width: 650px) {
     #content, #sidebar {

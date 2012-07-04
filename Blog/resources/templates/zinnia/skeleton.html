@@ -27,29 +27,6 @@
   </head>
   <body class="zinnia {% block body-class %}{% endblock %}">
     <div class="container">
-      <div id="header">
-        <ul class="top-navigation">
-          <li>
-            <a href="{% url 'zinnia_sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap">
-              {% trans "Sitemap" %}
-            </a>
-          </li>
-          <li>
-            <a href="{% url 'zinnia_entry_latest_feed' %}" title="{% trans "RSS Feed of latest entries" %}" class="feeds">
-              {% trans "RSS Feed" %}
-            </a>
-          </li>
-        </ul>
-        <h1>
-          <a href="{% url 'zinnia_entry_archive_index' %}" title="Zinnia's Blog" rel="home">
-            Zinnia's Blog
-          </a>
-        </h1>
-        <blockquote>
-          <p>Just another Zinnia Weblog.</p>
-        </blockquote>
-        {% block breadcrumbs %}{% endblock %}
-      </div>
       {% block slider %}{% endblock %}
       <div id="content" class="hfeed">
         {% block content %}
@@ -79,22 +56,46 @@
         {% endblock %}
       </div>
       <div id="sidebar">
+        <div id="header">
+          <!-- <ul class="top-navigation">
+                    <li>
+                      <a href="{% url 'zinnia_sitemap' %}" title="{% trans "Sitemap" %}" class="sitemap">
+                        {% trans "Sitemap" %}
+                      </a>
+                    </li>
+                    <li>
+                      <a href="{% url 'zinnia_entry_latest_feed' %}" title="{% trans "RSS Feed of latest entries" %}" class="feeds">
+                        {% trans "RSS Feed" %}
+                      </a>
+                    </li>
+                  </ul> -->
+          <!-- <h1>
+            <a href="{% url 'zinnia_entry_archive_index' %}" title="Zinnia's Blog" rel="home">
+              CodeTalk/
+            </a>
+          </h1>
+          <blockquote>
+            <p>Just, you know, because we love you &lt;3.</p>
+          </blockquote> -->
+        </div>  
         <div id="widget-welcome" class="widget">
-          <h3>Welcome!</h3>
+          <h3>
+            <a href="{% url 'zinnia_entry_archive_index' %}" title="CodeTalk's Blog" rel="home">
+                CodeTalk/
+              </a>
+          </h3>
           <p>
-            This simple skin is the base template of the Zinnia application,
-            used for displaying the blog quickly.
-          </p>
-          <p>
-            Feel free to override the <strong>zinnia/base.html</strong>
-            template to <a href="http://django-blog-zinnia.com/documentation/how-to/customize_look_and_feel/">change the default appearence</a>.
+            Hai thar, click around a bit, we hope you like our humble
+            posts.
+            <br>
+            <span style="font-style:italic;">- Let the code speak to you</span>
           </p>
         </div>
         {% block sidebar %}
         {% endblock %}
       </div>
       <div id="footer">
-        <p>Powered by <a href="http://www.djangoproject.com">Django</a> and <a href="https://github.com/Fantomas42/django-blog-zinnia">Zinnia {{ ZINNIA_VERSION }}</a>.</p>
+        
       </div>
     </div>
   </body>

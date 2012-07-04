@@ -1,7 +1,7 @@
 & {
   @include blueprint-typography(true);
   @include blueprint-interaction;
-  background: #000 repeat-x scroll left top;
+  background: #fff repeat-x scroll left top;
   a {
     text-decoration: none;
     &:hover { text-decoration: underline; }
