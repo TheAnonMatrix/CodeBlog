@@ -21,51 +21,8 @@
   {% zinnia_breadcrumbs %}
 {% endblock %}
 
+
 {% block sidebar %}
-<div id="widget-search" class="widget">
-  <h3>{% trans "Search" %}</h3>
-  {% include "zinnia/tags/search_form.html" %}
-</div>
-<div id="widget-categories" class="widget">
-  <h3>{% trans "Categories" %}</h3>
-  {% get_categories %}
-</div>
-<div id="widget-authors" class="widget">
-  <h3>{% trans "Authors" %}</h3>
-  {% get_authors %}
-</div>
-<div id="widget-calendar" class="widget">
-  <h3>{% trans "Calendar" %}</h3>
-  {% get_calendar_entries %}
-</div>
-<div id="widget-tags" class="widget">
-  <h3>{% trans "Tags" %}</h3>
-  {% get_tag_cloud %}
-</div>
-<div id="widget-recents" class="widget">
-  <h3>{% trans "Recent entries" %}</h3>
-  {% get_recent_entries %}
-</div>
-<div id="widget-comments" class="widget">
-  <h3>{% trans "Recent comments" %}</h3>
-  {% get_recent_comments %}
-</div>
-<div id="widget-linkbacks" class="widget">
-  <h3>{% trans "Recent linkbacks" %}</h3>
-  {% get_recent_linkbacks %}
-</div>
-<div id="widget-randoms" class="widget">
-  <h3>{% trans "Random entries" %}</h3>
-  {% get_random_entries %}
-</div>
-<div id="widget-populars" class="widget">
-  <h3>{% trans "Popular entries" %}</h3>
-  {% get_popular_entries %}
-</div>
-<div id="widget-archives" class="widget">
-  <h3>{% trans "Archives" %}</h3>
-  {% get_archives_entries_tree %}
-</div>
 {% if user.is_authenticated %}
 <div id="widget-tools" class="widget">
   <h3>{% trans "Tools" %}</h3>
@@ -94,4 +51,48 @@
   </ul>
 </div>
 {% endif %}
+<!-- <div id="widget-search" class="widget">
+  <h3>{% trans "Search" %}</h3>
+  {% include "zinnia/tags/search_form.html" %}
+</div> -->
+<div id="widget-recents" class="widget">
+  <h3>{% trans "Recent entries" %}</h3>
+  {% get_recent_entries %}
+</div>
+<div id="widget-categories" class="widget">
+  <h3>{% trans "Categories" %}</h3>
+  {% get_categories %}
+</div>
+<div id="widget-authors" class="widget">
+  <h3>{% trans "Authors" %}</h3>
+  {% get_authors %}
+</div>
+<!-- <div id="widget-calendar" class="widget">
+  <h3>{% trans "Calendar" %}</h3>
+  {% get_calendar_entries %}
+</div> -->
+<!-- <div id="widget-tags" class="widget">
+  <h3>{% trans "Tags" %}</h3>
+  {% get_tag_cloud %}
+</div> -->
+<!-- <div id="widget-comments" class="widget">
+  <h3>{% trans "Recent comments" %}</h3>
+  {% get_recent_comments %}
+</div> -->
+<!-- <div id="widget-linkbacks" class="widget">
+  <h3>{% trans "Recent linkbacks" %}</h3>
+  {% get_recent_linkbacks %}
+</div> -->
+<!-- <div id="widget-randoms" class="widget">
+  <h3>{% trans "Random entries" %}</h3>
+  {% get_random_entries %}
+</div> -->
+<!-- <div id="widget-populars" class="widget">
+  <h3>{% trans "Popular entries" %}</h3>
+  {% get_popular_entries %}
+</div> -->
+<div id="widget-archives" class="widget">
+  <h3>{% trans "Archives" %}</h3>
+  {% get_archives_entries_tree %}
+</div>
 {% endblock %}

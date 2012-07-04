@@ -1,15 +1,32 @@
 #sidebar {
+  background: url("../img/side-bar-pattern.png");
+  width: 248px;
   h3 {
+    color:#90A2A7;
+    text-shadow: 0 1px 1px #E2E7E8;
+    letter-spacing: 0.1em;
+    
     padding: 0.5em;
-    background-color: $box-color;
+    a {
+      color:#90A2A7;
+      text-shadow: 0 1px 1px #E2E7E8;
+      letter-spacing: 0.1em;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
-  p { padding-left: 1em; }
+  p { 
+    padding-left: 1em;
+    color:#555;
+  }
 
   ul, ol {
     margin-left: 1em;
     ul, ol {
       margin-left: 0em;
+      color:#555;
     }
   }
 }
