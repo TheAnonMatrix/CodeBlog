@@ -2,7 +2,7 @@
 
 ---
 
-###### Yes, this is our jazz-zone :3 ######
+###### Yes, this is our jazz-zone :3 ######    
 
 ---
 
@@ -25,6 +25,8 @@ If you're in doubt about what Django version you're running, you can do the foll
 The Django version is probably the most important one, since python is rather good at not breaking things, and doesn't need to introduce as much structural changes as Django might have to.
 
 ---
+
+asdasdasd
 
 ## Installation ##
 
